@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JuntongXiao_Potfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("#edu2").hide();
+        $("button").click(function(){
+          $("#edu2").toggle();
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <main>
+      <!-- **************************   PROFILE  **************************** -->
+      <header>
+        <div class="wrap">
+          <h1>Juntong Xiao</h1>
+          <h2>MEng. Electrical and Computer Engineering</h2>
+        </div>
+      </header>
+
+      <!-- **************************  EDUCATION  *************************** -->
+      <section class="education">
+        <div class="wrap">
+
+          <h2>Education</h2>
+
+          <!-- Ducation 1 -->
+          <section class="edu">
+            <div class="detail">
+              <h3>Master of Electrical and Computer Engineering</h3>
+              <h4>University of Ottawa, ON, CA</h4>
+              <p class="date">Sep.2019 - Present</p>
+            </div>
+            <div class="summary">
+              <ul>
+                <li> Currently in the first year of the master program</li>
+                <li> Exchanged to uOttawa in the fourth year of undergraduate (CGPA: 8.8/10), and meanwhile, granted admission to the master program</li>
+              </ul>
+            </div>
+          </section>
+
+          <button type="button" name="button">CLICK TO SHOW MORE</button>
+
+          <!-- Education 2 -->
+          <section class="edu" id="edu2">
+            <div class="detail">
+              <h3>Bachelor of Engineering, Nuclear Engineering & Technology</h3>
+              <h4>Sichuan University, China</h4>
+              <p class="date">Sep. 2016 - Jul.2019</p>
+            </div>
+            <div class="summary">
+              <ul>
+                <li>GPA: 3.3/4.0 for the first three years in SCU. Be selected to study abroad for one year</li>
+                <li>Received scholarships from the College of Physics of SCU for three consecutive years</li>
+              </ul>
+            </div>
+          </section>
+
+        </div>
+      </section>
+
+      <!-- ***********************  WORK EXPERIENCE  *********************** -->
+      <section class="work_experience">
+        <div class="box">
+          <h2>Work Experience</h2>
+
+          <!-- Job 1 -->
+          <div class="inlinebox">
+            <!-- <div class="detail"> -->
+              <h3>Data Analyst (Part-time)</h3>
+              <h4>Sprint Data System Inc., Markham, ON</h4>
+              <p class="date">Oct. 2020 - Present</p>
+            <!-- </div> -->
+            <!-- <div class="description"> -->
+              <ul>
+                <li>Log incoming/outgoing courier packages information to the system and process the data</li>
+                <li>Coordinate the administrative functions of the office and archive documents</li>
+                <li>Manage external and internal communications and materials</li>
+              </ul>
+            <!-- </div> -->
+          </div>
+
+          <!-- Job 2 -->
+          <div class="inlinebox" id="job2">
+            <!-- <div class="detail"> -->
+              <h3>Research Assistant</h3>
+              <h4>Sichuan University, China</h4>
+              <p class="date">Mar. 2019 - Jul. 2019</p>
+            <!-- </div>
+            <div class="description"> -->
+              <ul>
+                <li>Collaborated with the team in debugging and adjusting the PCB testing program for the LHAASO project using c/c++</li>
+                <li>Performed the testing process, recorded data, and organized the results into daily reports</li>
+                <li>Summarized project progress report regularly to the leader of the project</li>
+              </ul>
+            <!-- </div> -->
+          </div>
+
+          <!-- Job 3 -->
+          <div class="inlinebox">
+            <!-- <div class="detail"> -->
+              <h3>Manufacturing Engineer Assistant</h3>
+              <h4>GE-HPEC-NTC Energy Service Co., Ltd., China</h4>
+              <p class="date">Jul. 2018 - Sep. 2018</p>
+            <!-- </div>
+            <div class="description"> -->
+              <ul>
+                <li>Provided literature researching assistance to engineers, collected data of the designed technique for review</li>
+                <li>Assisted the department manager to provide guidance to the manufacturing process</li>
+                <li>Planned and delivered presentations to clients</li>
+              </ul>
+            <!-- </div> -->
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ******************  OTHER WORK EXPERIENCE ****************** -->
+      <section class="other_experience">
+        <div class="wrap">
+          <h2>Other Work Experience</h2>
+
+          <section class="job">
+            <div class="detail">
+              <h3>Department Head</h3>
+              <h4>Student Union of the College of Physics, Sichuan University, China</h4>
+              <p class="date">Sep.2017 –Jul.2018</p>
+            </div>
+            <div class="description">
+              <ul>
+                <li>Be elected as the department head after one-year of working and received the leader-of-the-year award</li>
+                <li>Leadership skills developed through recruiting and training new members for student union</li>
+                <li>Communicating skills gained from providing supports to new students with enrolment procedures and registration of school accommodation on faculty’s orientation</li>
+                <li>Coordinating and organizing abilities improved from holding welcome parties and arranging ice-breaker events for newly enrolled students</li>
+              </ul>
+            </div>
+          </section>
+
+        </div>
+      </section>
+
+      <!-- *****************  CONTACT INFO / SOCIAL MEDIA  ***************** -->
+      <footer>
+        <div class="wrap">
+          <h2>Contact Me</h2>
+          <div class="nav_bar">
+            <ul>
+              <li>
+                <a href="#phone" class="tab">PHONE</a>
+                <p id="phone">+1 (613)-869-0359</P>
+              </li>
+              <li>
+                <a href="#email" class="tab">EMAIL</a>
+                <P><a href="mailto:email@example.com" id="email">jxiao032@uottawa.ca</a></p>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+        <a href="#" id="back_to_top">BACK TO THE TOP</a>
+      </footer>
+
+    </main>
+  </body>
+</html>
