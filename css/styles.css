@@ -1,0 +1,217 @@
+/* Colour Palette
+cream #F4F1DE
+orange #E07A5F
+warm gray #3D405B
+sap green #81B29A
+eggshell #F2CC8F
+dark umber #403d39 -font colour
+ */
+
+ /* Global styles */
+ body{
+   color:#403d39;
+   margin: 0;
+   padding:0;
+   font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+   font-size: 15px;
+   line-height: 1.5;
+ }
+ a{
+   color: #3D5A80;
+ }
+ a:hover{
+   background: #E07A5F;
+ }
+ h1{
+   font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+   font-size: 50px;
+   text-align: center;
+   line-height: normal;
+ }
+ h2{
+   font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+   font-size: 35px;
+ }
+ h2,h4{
+   margin: 0;
+ }
+ h3{
+   margin-top: 25px;
+   margin-bottom: 0;
+ }
+ .wrap{
+   width:800px;
+   margin: 0 auto;
+   padding: 60px 20px;
+ }
+ .date{
+   margin-top: 0;
+   font-style: italic;
+ }
+
+ /* header */
+header{
+  background: #F4F1DE;
+  color: #3D405B;
+  position: sticky;
+  top: 0;
+}
+header .wrap{
+  width:100vmax;
+  padding-top: 0;
+  padding-bottom: 20px;
+}
+header h1{
+  margin-top: 0;
+  padding-top: 10px;
+}
+header h2{
+  text-align: center;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  line-height: normal;
+}
+ /* EDUCATION */
+.education{
+  background: #E07A5F;
+}
+.education h3{
+  margin-top: 13px;
+}
+button{
+  background: #E07A5F;
+  border: 2px solid #403d39;
+}
+button:hover{
+  background: rgba(244, 241, 222, 0.1);
+}
+
+ /* WORK EXPERIENCE */
+ .work_experience{
+   background: #3D405B;
+   color: #F4F1DE;
+ }
+ .work_experience h2{
+   margin-top: 20px;
+ }
+ .work_experience .div{
+   overflow: hidden;
+   height: 500px;
+ }
+ .work_experience .box{
+   padding:20px 0 15px 20px;
+   white-space: nowrap;
+   height:430px;
+   overflow-y: hidden;
+ }
+ .work_experience .box ul{
+   white-space: normal;
+ }
+ .work_experience .inlinebox{
+   width: 40%;
+   margin-left: 3%;
+   height: 300px;
+   display:inline-grid;
+   /* position:relative;
+   top:10px; */
+ }
+ #job2{
+   padding-left: 3%;
+   border-left: dashed;
+   border-right: dashed;
+ }
+ .work_experience h2{
+   margin-left: 30px;
+ }
+ .work_experience h3, .work_experience h4, .work_experience p, .work_experience ul{
+   margin-left: 10px;
+   margin-right: 10px;
+ }
+
+ /* OTHER EXPERIENCE */
+.other_experience{
+  background: #81B29A;
+}
+.other_experience h3{
+  margin-top: 13px;
+}
+.other_experience .job{
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+ /* footer */
+ footer{
+   background: #F2CC8F;
+ }
+ footer .wrap{
+   height: 150px;
+ }
+ footer ul{
+   width:auto;
+   list-style-type: none;
+   white-space:nowrap;
+   overflow: hidden;
+ }
+ footer li{
+   float: left;
+   text-align: center;
+   width: 50%;
+   position: relative;
+   overflow: hidden;
+   background:#F4F1DE;
+ }
+
+ footer .tab{
+   display: block;
+   padding: 10px;
+   overflow: hidden;
+   text-decoration: none;
+   color: #403d39;
+ }
+ footer ul li p{
+   background:#F4F1DE;
+   position: relative;
+   display: none;
+ }
+ footer ul li:hover p{
+   display: block;
+ }
+ footer h2{
+   text-align: center;
+ }
+ #back_to_top{
+   text-decoration: none;
+   position: relative;
+   bottom: 3px;
+   left: 5px;
+   color: #403d39;
+   font-size: 10px;
+ }
+
+ /* Responsive */
+ @media screen and (min-width: 900px){
+   .job{
+     display: grid;
+     grid-template-columns: 1fr 2fr;
+     column-gap: 20px;
+     grid-row-gap: 15px;
+   }
+   .edu{
+     display: grid;
+     grid-template-columns: 1fr 2fr;
+     column-gap: 20px;
+     grid-row-gap: 15px;
+   }
+ }
+
+ @media screen and (max-width: 850px) {
+   .work_experience .inlinebox{
+     width: 50%;
+   }
+ }
+ @media screen and (max-width: 600px){
+   header h2{
+     font-size: 25px;
+   }
+ }
