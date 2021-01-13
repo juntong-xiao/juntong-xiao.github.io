@@ -157,7 +157,39 @@ button:hover{
  }
 
  footer .nav_bar{
-   width: 250px;
+   width: 100%;
+ }
+ footer ul{
+   width:100%;
+   list-style-type: none;
+   padding: 0;
+   /* overflow-y: hidden; */
+ }
+ footer li{
+   /* float: left; */
+   text-align: center;
+   /* width: 50%; */
+   /* position: relative; */
+   background:#F4F1DE;
+ }
+ footer .tab{
+
+   padding: 0 10px;
+   /* overflow: hidden; */
+   text-decoration: none;
+   color: #403d39;
+ }
+ footer ul li p{
+   background:#F4F1DE;
+   /* position: relative; */
+   display: none;
+ }
+ footer ul li:hover p{
+   display: block;
+   margin: 0;
+ }
+ footer .nav_bar img{
+   padding-top: 8px;
  }
 
  #back_to_top{
