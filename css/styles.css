@@ -75,6 +75,13 @@ header h2{
 .education{
   background: #E07A5F;
 }
+.education .wrap{
+  width: 85vmax;
+  /* padding-left: 0; */
+  padding-right: 30px;
+  /* margin-left: 20vmax; */
+  margin-right: 0;
+}
 .education h3{
   margin-top: 13px;
 }
@@ -92,38 +99,8 @@ button:hover{
    color: #F4F1DE;
  }
  .work_experience h2{
-   margin-top: 20px;
- }
- .work_experience .div{
-   overflow: hidden;
-   height: 500px;
- }
- .work_experience .box{
-   padding:20px 80px 15px 20px;
-   white-space: nowrap;
-   height:430px;
-   overflow-y: hidden;
- }
- .work_experience .box ul{
-   white-space: normal;
- }
- .work_experience .inlinebox{
-   width: 40%;
-   margin-left: 3%;
-   height: 300px;
-   display:inline-grid;
-   /* position:relative;
-   top:10px; */
- }
- #job2{
-   padding-left: 3%;
-   border-left: dashed;
-   border-right: dashed;
- }
- #job3{
-   padding-right: 50px;
- }
- .work_experience h2{
+   margin-top: 0;
+   padding-top: 20px;
    margin-left: 30px;
  }
  .work_experience h3, .work_experience h4, .work_experience p, .work_experience ul{
@@ -131,10 +108,34 @@ button:hover{
    margin-right: 10px;
  }
 
+ .inlinebox{
+   padding-left: 50px;
+   padding-right: 50px;
+   margin: 0 30px;
+   width: 50%;
+ }
+ #job2{
+   border-top: dashed;
+   border-bottom: dashed;
+ }
+ #job3 ul{
+   margin-bottom: 0;
+   padding-bottom: 30px;
+ }
+
+
  /* OTHER EXPERIENCE */
 .other_experience{
   background: #81B29A;
 }
+.other_experience .wrap{
+  width:80vmax;
+  /* padding-left: 0; */
+  padding-right: 30px;
+  /* margin-left: 0; */
+  margin-right: 0;
+}
+
 .other_experience h3{
   margin-top: 13px;
 }
@@ -148,41 +149,17 @@ button:hover{
    background: #F2CC8F;
  }
  footer .wrap{
+   width: 300px;
    height: 150px;
- }
- footer ul{
-   width:auto;
-   list-style-type: none;
-   white-space:nowrap;
-   overflow: hidden;
- }
- footer li{
-   float: left;
-   text-align: center;
-   width: 50%;
-   position: relative;
-   overflow: hidden;
-   background:#F4F1DE;
- }
-
- footer .tab{
-   display: block;
-   padding: 10px;
-   overflow: hidden;
-   text-decoration: none;
-   color: #403d39;
- }
- footer ul li p{
-   background:#F4F1DE;
-   position: relative;
-   display: none;
- }
- footer ul li:hover p{
-   display: block;
  }
  footer h2{
    text-align: center;
  }
+
+ footer .nav_bar{
+   width: 250px;
+ }
+
  #back_to_top{
    text-decoration: none;
    position: relative;
@@ -190,7 +167,7 @@ button:hover{
    left: 5px;
    color: #403d39;
    font-size: 13px;
-   margin-top: -5px;
+   margin-top: 5px;
  }
  .links{
    width: 80%;
@@ -201,7 +178,7 @@ button:hover{
    padding: 0 10px;
    display: inline-grid;
  }
- 
+
 
  /* Responsive */
  @media screen and (min-width: 900px){
@@ -219,9 +196,75 @@ button:hover{
    }
  }
 
- @media screen and (max-width: 850px) {
+ @media screen and (min-width: 700px) {
+   .work_experience .div{
+     overflow: hidden;
+     height: 500px;
+   }
+   .work_experience .box{
+     padding:20px 80px 50px 20px;
+     white-space: nowrap;
+     height:430px;
+     overflow-y: hidden;
+   }
+   .work_experience .box ul{
+     white-space: normal;
+   }
    .work_experience .inlinebox{
+     width: 40%;
+     margin-left: 3%;
+     height: 300px;
+     display:inline-grid;
+     /* position:relative;
+     top:10px; */
+   }
+   #job2{
+     padding-left: 3%;
+     border-left: dashed;
+     border-right: dashed;
+     border-top: none;
+     border-bottom: none;
+   }
+   #job3{
+     padding-right: 50px;
+   }
+ }
+
+ @media screen and (min-width: 850px) {
+   footer .wrap{
+     width: 750px;
+   }
+   footer .nav_bar{
+     width: auto;
+   }
+   footer ul{
+     width:100%;
+     list-style-type: none;
+     padding: 0;
+     /* overflow-y: hidden; */
+   }
+   footer li{
+     float: left;
+     text-align: center;
      width: 50%;
+     position: relative;
+     background:#F4F1DE;
+   }
+
+   footer .tab{
+     display: block;
+     padding: 10px;
+     /* overflow: hidden; */
+     text-decoration: none;
+     color: #403d39;
+   }
+   footer ul li p{
+     background:#F4F1DE;
+     position: relative;
+     display: none;
+   }
+   footer ul li:hover p{
+     display: block;
    }
  }
  @media screen and (max-width: 600px){
