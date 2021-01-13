@@ -57,7 +57,7 @@ header{
   top: 0;
 }
 header .wrap{
-  width:100vmax;
+  width:90vmax;
   padding-top: 0;
   padding-bottom: 20px;
 }
@@ -99,7 +99,7 @@ button:hover{
    height: 500px;
  }
  .work_experience .box{
-   padding:20px 0 15px 20px;
+   padding:20px 80px 15px 20px;
    white-space: nowrap;
    height:430px;
    overflow-y: hidden;
@@ -119,6 +119,9 @@ button:hover{
    padding-left: 3%;
    border-left: dashed;
    border-right: dashed;
+ }
+ #job3{
+   padding-right: 50px;
  }
  .work_experience h2{
    margin-left: 30px;
@@ -186,8 +189,19 @@ button:hover{
    bottom: 3px;
    left: 5px;
    color: #403d39;
-   font-size: 10px;
+   font-size: 13px;
+   margin-top: -5px;
  }
+ .links{
+   width: 80%;
+   margin: 0 10px -5px auto;
+   text-align:right;
+ }
+ .links .icon_wrap{
+   padding: 0 10px;
+   display: inline-grid;
+ }
+ 
 
  /* Responsive */
  @media screen and (min-width: 900px){
