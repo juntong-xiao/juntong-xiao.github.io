@@ -76,18 +76,21 @@ header h2{
   background: #E07A5F;
 }
 .education .wrap{
-  width: 85vmax;
+  width: 80vmax;
   /* padding-left: 0; */
   padding-right: 30px;
   /* margin-left: 20vmax; */
-  margin-right: 0;
+  /* margin-right: 0; */
 }
 .education h3{
   margin-top: 13px;
 }
+
 button{
   background: #E07A5F;
   border: 2px solid #403d39;
+  width: 150px;
+  text-align: center;
 }
 button:hover{
   background: rgba(244, 241, 222, 0.1);
@@ -109,10 +112,10 @@ button:hover{
  }
 
  .inlinebox{
-   padding-left: 50px;
-   padding-right: 50px;
-   margin: 0 30px;
-   width: 50%;
+   padding-left: 20px;
+   padding-right: 10px;
+   margin: 0 20px;
+   /* width: 50%; */
  }
  #job2{
    border-top: dashed;
@@ -149,7 +152,7 @@ button:hover{
    background: #F2CC8F;
  }
  footer .wrap{
-   width: 300px;
+   width: 250px;
    height: 150px;
  }
  footer h2{
@@ -299,8 +302,13 @@ button:hover{
      display: block;
    }
  }
- @media screen and (max-width: 600px){
-   header h2{
-     font-size: 25px;
+
+ @media screen and (max-width: 400px) {
+   header .wrap, .education .wrap, .other_experience .wrap{
+     width: 80%;
+   }
+   .work_experience h2{
+     text-align: center;
+     margin-left: 0;
    }
  }
