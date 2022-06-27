@@ -123,7 +123,11 @@ button:hover{
    border-top: dashed;
    border-bottom: dashed;
  }
- #job3 ul{
+ #job3{
+   border-top: dashed;
+   border-bottom: dashed;
+ }
+ #job4 ul{
    margin-bottom: 0;
    padding-bottom: 30px;
  }
