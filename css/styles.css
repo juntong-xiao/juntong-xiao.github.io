@@ -124,7 +124,6 @@ button:hover{
    border-bottom: dashed;
  }
  #job3{
-   border-top: dashed;
    border-bottom: dashed;
  }
  #job4 ul{
@@ -252,7 +251,7 @@ button:hover{
      white-space: normal;
    }
    .work_experience .inlinebox{
-     width: 40%;
+     width: 500px;
      margin-left: 3%;
      height: 300px;
      display:inline-grid;
@@ -261,13 +260,22 @@ button:hover{
    }
    #job2{
      padding-left: 3%;
+     padding-right: 30px;
      border-left: dashed;
-     border-right: dashed;
      border-top: none;
      border-bottom: none;
    }
    #job3{
-     padding-right: 50px;
+     padding-left: 3%;
+     padding-right: 30px;
+     border-left: dashed;
+     border-top: none;
+     border-bottom: none;
+   }
+   #job4{
+     padding-left: 3%;
+     padding-right: 100px;
+     border-left: dashed;
    }
  }
 
