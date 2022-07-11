@@ -6,6 +6,6 @@ btn.addEventListener("click",function(){
     btn.innerHTML="CLICK TO SHOW MORE";
   }
   else {
-    btn.innerHTML="CLICK TO SHOW LESS";
+    btn.innerHTML="SHOW LESS";
   }
 });
