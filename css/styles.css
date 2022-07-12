@@ -70,7 +70,7 @@ header .wrap{
 header h2{
   text-align: center;
   font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
-  font-size: 30px;
+  font-size: 15px;
   line-height: normal;
 }
  /* EDUCATION */
@@ -320,6 +320,9 @@ button:hover{
  @media screen and (max-width: 400px) {
    header .wrap, .education .wrap, .other_experience .wrap{
      width: 80%;
+   }
+   header h2 {
+     font-size: 13px;
    }
    .work_experience h2{
      text-align: center;
